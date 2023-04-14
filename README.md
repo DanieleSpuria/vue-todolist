@@ -26,3 +26,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 - aggiunto bottone svuota lista;
 - aggiunto funzione messaggio;
 - aggiunto funzione add che aggiunge la nota, inserita tramite l'input, come nuovo oggetto in note, verificandone la lunghezza;
+- una nota non può essere cancellata

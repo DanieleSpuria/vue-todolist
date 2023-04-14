@@ -26,9 +26,12 @@ createApp({
   methods: {
     rmv(nota, i) {
       this.msg = '';
-      if (nota.done === true) this.note.splice(i,1);
+      if (nota.text === 'Bere la birra') this.message('Non puoi cancellarlo!')
       else {
-        this.message('Questo non lo hai ancora fatto!');
+        if (nota.done === true) this.note.splice(i,1);
+        else {
+          this.message('Questo non lo hai ancora fatto!');
+        }
       }
     },
 
@@ -51,6 +54,32 @@ createApp({
         this.note.unshift(this.new);
       }
       this.newNote = ''
+    },
+
+    empty(i) {
+      this.msg = '';
+      this.note.splice(i);
+      setTimeout(this.reality, 3000)
+    },
+
+    reality() {
+      this.new = {
+        text: 'Bere la birra',
+        done: true
+      };
+      this.note.unshift(this.new);
+    },
+
+    time() {
+      this.note.forEach(this.eccola)
+    },
+
+    eccola(nota){
+      if (nota.text === 'Bere la birra') nota.done = !nota.done
     }
+  },
+
+  mounted(){
+    setInterval(this.time, 1000)
   }
 }).mount('#app');

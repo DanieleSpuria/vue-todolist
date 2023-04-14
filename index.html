@@ -22,7 +22,7 @@
         placeholder="Scrivi nota da aggiungere"
       >
       <button @click="add">Aggiungi</button>
-      <button @click="note.splice(index)">Svuota</button>
+      <button @click="empty(index)">Svuota</button>
     </div>
     
     <div class="message">
@@ -33,10 +33,10 @@
       <ul>
         <p v-if="note.length === 0">Vuoto</p>
         <li
-        v-for="(nota, index) in note"
-        @click="nota.done = !nota.done"
-        class="note"
-        :class="{'done' : nota.done === true}"
+          v-for="(nota, index) in note"
+          @click="nota.done = !nota.done"
+          class="note"
+          :class="{'done' : nota.done === true}"
         >
         <span>{{nota.text}}</span>
         <i
