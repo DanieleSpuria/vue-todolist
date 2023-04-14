@@ -18,4 +18,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 2- cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se `done` era uguale a `false`, impostare `true` e viceversa)  
 
 ## Sviluppo:
-- 
+- scrivere il markup;
