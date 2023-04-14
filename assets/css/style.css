@@ -43,3 +43,7 @@
 .note i:hover{
   color: lightblue;
 }
+
+.done :not(i){
+  text-decoration:line-through;
+}
