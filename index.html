@@ -17,6 +17,7 @@
     <div class="input-invio">
       <input type="text">
       <button>Aggiungi</button>
+      <button @click="note.splice(index)">Rimuovi tutto</button>
     </div>
     
     <div class="message">
@@ -25,6 +26,7 @@
     
     <div class="container">
       <ul>
+        <p v-if="note.length === 0">Vuoto</p>
         <li
         v-for="(nota, index) in note"
         @click="nota.done = !nota.done"
