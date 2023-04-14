@@ -18,7 +18,7 @@ createApp({
         },
       ],
 
-      msg: ''
+      msg: '',
     }
   },
   
