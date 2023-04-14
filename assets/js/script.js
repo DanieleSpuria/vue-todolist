@@ -5,22 +5,21 @@ createApp({
     return{
       note: [
         {
-          text: 'Spesa',
+          text: 'Fare la pesa',
           done: false
         },
         {
-          text: 'Birra',
-          done: false
+          text: 'Bere la birra',
+          done: true
         },
         {
-          text: 'Codice',
+          text: 'Pulire il codice',
           done: false
-        },
+        }
       ],
-
+      new: {},
       msg: '',
-      newNote: '',
-      new: {}
+      newNote: ''
     }
   },
   
@@ -53,6 +52,5 @@ createApp({
       }
       this.newNote = ''
     }
-    
   }
 }).mount('#app');
