@@ -21,3 +21,5 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 - scrivere il markup;
 - aggiunto array di oggetti note, stampato in HTML e aggiunto classe done se true;
 - aggiunto click alla nota che modifica in false e true il done;
+- aggiunta funzione che rimuove la nota già fatta;
+- aggiunto timeout per il reset del messaggio;

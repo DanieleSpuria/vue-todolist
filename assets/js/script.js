@@ -26,8 +26,16 @@ createApp({
     rmv(nota, i) {
       this.msg = '';
       if (nota.done === true) this.note.splice(i,1);
-      else this.msg = 'Questo non lo hai ancora fatto!';
+      else {
+        this.msg = 'Questo non lo hai ancora fatto!';
+        setTimeout(this.out, 3000)
+      }
     },
+
+    out(){
+      this.msg = '';
+    }
+    
   },
 
   mounted(){
