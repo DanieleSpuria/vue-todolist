@@ -23,3 +23,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 - aggiunto click alla nota che modifica in false e true il done;
 - aggiunta funzione che rimuove la nota già fatta;
 - aggiunto timeout per il reset del messaggio;
+- aggiunto bottone svuota lista;
