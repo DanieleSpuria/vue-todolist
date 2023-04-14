@@ -26,7 +26,7 @@ createApp({
   methods: {
     rmv(nota, i) {
       this.msg = '';
-      if (nota.text === 'Bere la birra') this.message('Non puoi cancellarlo!')
+      if ((nota.text).toUpperCase() === 'BERE LA BIRRA') this.message('Non puoi cancellarlo!')
       else {
         if (nota.done === true) this.note.splice(i,1);
         else {
@@ -65,7 +65,7 @@ createApp({
     },
 
     beer(nota){
-      if (nota.text === 'Bere la birra') nota.done = !nota.done
+      if ((nota.text).toUpperCase() === 'BERE LA BIRRA') nota.done = !nota.done
     }
   },
 
