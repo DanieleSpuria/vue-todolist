@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dongle', sans-serif;
-  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
 }
 
 .input-invio{
@@ -45,5 +44,5 @@
 }
 
 .done :not(i){
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
