@@ -35,15 +35,6 @@ createApp({
       }
     },
 
-    message(msg) {
-      this.msg = msg;
-      setTimeout(this.out, 3000);
-    },
-
-    out(){
-      this.msg = '';
-    },
-
     add() {
         if (this.newNote.length <= 4) this.message('La nota è troppo breve!');
         else {
@@ -59,27 +50,26 @@ createApp({
     empty(i) {
       this.msg = '';
       this.note.splice(i);
-      setTimeout(this.reality, 3000)
+      setTimeout(() => {
+        this.new = {
+          text: 'Bere la birra',
+          done: true
+        };
+        this.note.unshift(this.new);
+      }, 3000)
     },
 
-    reality() {
-      this.new = {
-        text: 'Bere la birra',
-        done: true
-      };
-      this.note.unshift(this.new);
+    message(msg) {
+      this.msg = msg;
+      setTimeout(() => this.msg = '', 3000);
     },
 
-    time() {
-      this.note.forEach(this.eccola)
-    },
-
-    eccola(nota){
+    beer(nota){
       if (nota.text === 'Bere la birra') nota.done = !nota.done
     }
   },
 
   mounted(){
-    setInterval(this.time, 1000)
+    setInterval(() => this.note.forEach(this.beer), 1000)
   }
 }).mount('#app');
