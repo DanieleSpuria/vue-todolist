@@ -14,7 +14,7 @@ createApp({
         },
         {
           text: 'Codice',
-          done: true
+          done: false
         },
       ]
     }
@@ -25,6 +25,6 @@ createApp({
   },
 
   mounted(){
-    console.log('ciao');
+    console.log(this);
   }
 }).mount('#app');

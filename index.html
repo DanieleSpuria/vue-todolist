@@ -22,9 +22,10 @@
     <div class="container">
       <ul>
         <li
+        v-for="(nota, index) in note"
+        @click="nota.done = !nota.done"
         class="note"
         :class="{'done' : nota.done === true}"
-        v-for="nota in note"
         >
           <span>{{nota.text}}</span>
           <i class="fa-solid fa-trash"></i>
