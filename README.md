@@ -19,3 +19,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 ## Sviluppo:
 - scrivere il markup;
+- aggiunto array di oggetti note, stampato in HTML e aggiunto classe done se true

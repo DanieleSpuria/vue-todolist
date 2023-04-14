@@ -21,16 +21,12 @@
 
     <div class="container">
       <ul>
-        <li class="note">
-          <span>Cose</span>
-          <i class="fa-solid fa-trash"></i>
-        </li>
-        <li class="note">
-          <span>Cose</span>
-          <i class="fa-solid fa-trash"></i>
-        </li>
-        <li class="note done">
-          <span>Cose</span>
+        <li
+        class="note"
+        :class="{'done' : nota.done === true}"
+        v-for="nota in note"
+        >
+          <span>{{nota.text}}</span>
           <i class="fa-solid fa-trash"></i>
         </li>
       </ul>
