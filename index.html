@@ -15,8 +15,8 @@
 <body>
   <div id="app">
     <div class="input-invio">
-      <input type="text">
-      <button>Aggiungi</button>
+      <input v-model="newNote" type="text" placeholder="Scrivi nota da aggiungere">
+      <button @click="add">Aggiungi</button>
       <button @click="note.splice(index)">Svuota</button>
     </div>
     

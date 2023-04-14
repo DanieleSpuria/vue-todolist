@@ -24,3 +24,5 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 - aggiunta funzione che rimuove la nota già fatta;
 - aggiunto timeout per il reset del messaggio;
 - aggiunto bottone svuota lista;
+- aggiunto funzione messaggio;
+- aggiunto funzione add che aggiunge la nota, inserita tramite l'input, come nuovo oggetto in note, verificandone la lunghezza;
