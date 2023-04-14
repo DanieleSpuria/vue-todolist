@@ -18,7 +18,11 @@
       <input type="text">
       <button>Aggiungi</button>
     </div>
-
+    
+    <div class="message">
+      <h2>{{msg}}</h2>
+    </div>
+    
     <div class="container">
       <ul>
         <li
@@ -27,8 +31,11 @@
         class="note"
         :class="{'done' : nota.done === true}"
         >
-          <span>{{nota.text}}</span>
-          <i class="fa-solid fa-trash"></i>
+        <span>{{nota.text}}</span>
+        <i
+          class="fa-solid fa-trash"
+          @click.stop="rmv(nota, index)"
+          ></i>
         </li>
       </ul>
     </div>
