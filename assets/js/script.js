@@ -56,12 +56,12 @@ createApp({
           done: true
         };
         this.note.unshift(this.new);
-      }, 3000)
+      }, 2000)
     },
 
     message(msg) {
       this.msg = msg;
-      setTimeout(() => this.msg = '', 3000);
+      setTimeout(() => this.msg = '', 1000);
     },
 
     beer(nota){
