@@ -5,7 +5,7 @@ createApp({
     return{
       note: [
         {
-          text: 'Fare la pesa',
+          text: 'Fare la spesa',
           done: false
         },
         {
